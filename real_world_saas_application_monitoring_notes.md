@@ -1,8 +1,9 @@
 # Application alerts
-1. Critical business task based queue size crossing threshold.
-2. critical busines task related 3rd party api X failures in Y minutes/seconds.
+1. Critical business task based queue size crossing threshold
+2. critical busines task related 3rd party api X failures in Y minutes/seconds
+3. Critical API P99/95 percentile based alerting - multi tenancy 
 
-# Infra 
+# Infra - Icinga, Graphana
 1. Graphana dashbaords for timeline based trend analysis
 2. infra utilisation level alerts - CPU, RAM, Disk 
 
@@ -12,7 +13,7 @@ every min check these
 2. in last 5min, latency breach P99(30-40 api's total hits or checking for each api separately)
 3. in last 5 min, api status error rate percentage of hits receieved
 
-# Health-check Logics
+# Health-checks
 1. Activemq
     1. Able to create new connection
     2. Produce msg and time taken
@@ -39,5 +40,4 @@ every min check these
 7. Zookeeper
         1. Check  isConnected via zookeeper client
         2. Acquire a lock (use health check namespace) and release lock, capture status and time of both operation
-
-
+8. AWS Route 53 DNS “health check functionality 
